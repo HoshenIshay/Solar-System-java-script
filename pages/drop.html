@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../style/drop.css">
+</head>
+<body>
+    <h1 id="Headlines">Solar System</h1>
+    <p id="Headlines">Can you fix the solar system?</p>
+    <div class="fill">
+        <div class="container" id="container1">
+            <div id="boxA" class="Venus1" draggable="true" ondragstart="return dragStart(event)">Venus </div>
+            <div id="boxA" class="Earth1" draggable="true" ondragstart="return dragStart(event)"> Earth </div>
+            <div id="boxA" class="Saturn1" draggable="true" ondragstart="return dragStart(event)"> Saturn </div>
+            <div id="boxA" class="Neptune1" draggable="true" ondragstart="return dragStart(event)">Neptune </div>
+            <div id="boxA" class="Mercury1" draggable="true" ondragstart="return dragStart(event)">Mercury </div>
+            <div id="boxA" class="Mars1" draggable="true" ondragstart="return dragStart(event)">Mars </div>
+            <div id="boxA" class="Jupiter1" draggable="true" ondragstart="return dragStart(event)">Jupiter </div>
+            <div id="boxA" class="Uranus1" draggable="true" ondragstart="return dragStart(event)">Uranus </div>
+        </div>
+    </div>
+    <div class="blank">
+        <div class="container">
+            <div class="sun" ></div>
+            <div id="boxB" class="Mercury"  ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+            <div id="boxB" class="Venus"  ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+            <div id="boxB" class="Earth" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+            <div id="boxB" class="Mars"  ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+            <div id="boxB" class="Jupiter"  ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+            <div id="boxB" class="Saturn"  ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+            <div id="boxB" class="Uranus"  ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+            <div id="boxB" class="Neptune"  ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+        </div>
+    </div>
+    <footer id="dark-mode-toggle">
+        <i class="fas fa-adjust"></i>
+        <small>Light/dark-mode</small>
+      </footer>
+      <button onclick="help()">Help</button>
+      <div id="help1">
+        Mercury ,  Venus , Earth ,  Mars ,  Jupiter ,  Saturn ,  Uranus ,  Neptune
+        </div>
+    <script src="../script/drop.js"></script>
+</body>
+    </html>
